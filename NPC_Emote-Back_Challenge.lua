@@ -8,8 +8,8 @@ print("+-+-+-+-+")
 
 local Emotemax = 470
 local percent = 0.25
-local NPCEMOTEIDS = {}
-local NPCEMOTEIDS = {3100,3116,3127,10685,4949,600004};-- creature entry id's
+local NPCIDS = {}
+local NPCIDS = {3100,3116,3127,10685,4949,600004};-- creature entry id's
 				
 local function NPC_EMOTE(event, creature, player, emoteid)
 
@@ -27,7 +27,7 @@ local Reaction = math.random(1, Emotemax)
 end
 
 for a = 1,#NPCEMOTEIDS do
-	RegisterCreatureEvent(NPCEMOTEIDS[a], 8, NPC_EMOTE)
+	RegisterCreatureEvent(NPCIDS[a], 8, NPC_EMOTE)
 end
 
 print("+Emoting+")
