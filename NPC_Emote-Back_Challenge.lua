@@ -26,7 +26,7 @@ local Reaction = math.random(1, Emotemax)
 	end
 end
 
-for a = 1,#NPCEMOTEIDS do
+for a = 1,#NPCIDS do
 	RegisterCreatureEvent(NPCIDS[a], 8, NPC_EMOTE)
 end
 
