@@ -22,7 +22,7 @@ local Reaction = math.random(1, Emotemax)
 		creature:Emote(Reaction)
 	else
 		creature:SendUnitYell("!!How Dare You!!",0)
-		creature:AttackStart(player)
+		creature:AttackStart(player) -- wont work if player has GM on.
 	end
 end
 
