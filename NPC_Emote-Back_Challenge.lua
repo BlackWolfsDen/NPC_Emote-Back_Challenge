@@ -4,7 +4,7 @@
 -- ooorrrrr... the creature may just attack you.... its a work in progress
 -- slp13at420 emudevs.com
 
-print("+-+-+-+-+")
+print("+-+-©-+-+")
 
 local Emotemax = 470
 local percent = 0.25
