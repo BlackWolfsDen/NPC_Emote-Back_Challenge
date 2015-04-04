@@ -6,23 +6,22 @@
 
 print("+-+-©-+-+")
 
-local Emotemax = 470
-local percent = 0.25
-local NPCIDS = {}
+local Emotemax = 470;
+local percent = 0.25;
 local NPCIDS = {3100,3116,3127,10685,4949,600004};-- creature entry id's
 				
 local function NPC_EMOTE(event, creature, player, emoteid)
 
 math.randomseed(tonumber(os.time()*os.time()))
 
-local chance = math.random(1, Emotemax)
-local Reaction = math.random(1, Emotemax)
+local chance = math.random(1, Emotemax);
+local Reaction = math.random(1, Emotemax);
 
 	if(chance < (Emotemax-(Emotemax*percent)))then
-		creature:Emote(Reaction)
+		creature:Emote(Reaction);
 	else
-		creature:SendUnitYell("!!How Dare You!!",0)
-		creature:AttackStart(player) -- wont work if player has GM on.
+		creature:SendUnitYell("!!How Dare You!!",0);
+		creature:AttackStart(player); -- wont work if player has GM on.
 	end
 end
 
